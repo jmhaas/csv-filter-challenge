@@ -27,3 +27,25 @@ Ken,Thompson,19430204
 Rob,Pike,19560101
 Robert,Griesemer,19640609
 ```
+
+
+# How-To - 
+The CSV filter runs like any other Java project, either utilizing the java run command "java -jar csv_filter-0.0.1-SNAPSHOT.jar" or through an IDE as a regular compiled project.
+
+Once it is running...
+1. There will be a prompt for a file path to the CSV file locally, input that literal path
+2. A prompt for a specific header search will show, search the three given headers for the filtered data
+3. After this, you have the option for searching for a name or date of birth match. If yes, input a name or DOB...if not, just type no
+4. Then the application will prompt you for another scan, if yes: input another file literal path and the process will start again, if no: the application will close, if else: the application will close with a 404 error
+
+# Assumptions
+1. The CSV file will have a fixed column length of 3...first_name, last_name, DOB
+2. The CSV file row length does not matter
+3. The CSV file will follow the same format as the above 'Example Input:'
+4. The name filter will pick up anything with a similar name, i.e. search "Michael Jordan"...data will return both "Michael, Jordan" and "Michael, Jackson" because the first_name is the same
+5. The user is going to follow the instructions...there is error handling but not crazy levels, tried to create a simple console-based application that was easy to use and "just work"
+6. I tried to limit my time to just solving the problem, normally there would be unit tests, exception handling, logging, etc.
+
+
+
+

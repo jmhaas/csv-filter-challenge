@@ -7,7 +7,6 @@ import java.util.Arrays;
 
 public class CsvFilterConsole extends FileProcessor {
 
-//    C:\csv_test\csv_test.csv
     InputScanner inputScanner = new InputScanner();
     String userInput;
 
@@ -41,8 +40,6 @@ public class CsvFilterConsole extends FileProcessor {
             System.out.println("Command Not Recognized - Closing Application");
             System.exit(404);
         }
-
-
     }
 
     private String[] displayFileInput(String inputFile){

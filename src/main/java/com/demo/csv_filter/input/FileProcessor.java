@@ -30,7 +30,7 @@ public class FileProcessor {
         return headerFilter();
     }
 
-    public String[] headerFilter() {
+    private String[] headerFilter() {
         headerRow.add(rawCsv.get(0));
         return headerRow.get(0);
     }
